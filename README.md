@@ -25,7 +25,7 @@ mkdir ccminer && cd ccminer
 wget https://raw.githubusercontent.com/ITCYBERSECURITY-LEGION7-TEAM/pre-compiled/generic/ccminer
 wget https://raw.githubusercontent.com/ITCYBERSECURITY-LEGION7-TEAM/pre-compiled/generic/config.json
 wget https://raw.githubusercontent.com/ITCYBERSECURITY-LEGION7-TEAM/pre-compiled/generic/start.sh
-wget https://raw.githubusercontent.com/ITCYBERSECURITY-LEGION7-TEAM/pre-compiled/generic/zLancher.sh
+wget https://raw.githubusercontent.com/ITCYBERSECURITY-LEGION7-TEAM/pre-compiled/generic/zLauncher.sh
 chmod +x ccminer start.sh zLancher.sh
 ```
 # Usage:
