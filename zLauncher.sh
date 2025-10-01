@@ -56,23 +56,30 @@ simulate_hacker_loading() {
 create_default_config() {
     cat > $CONFIG_FILE << EOF
 {
-    "pools": [
-        {
-            "url": "stratum+tcp://pool.example.com:4444",
-            "user": "$WALLET_ADDRESS.$WORKER_NAME",
-            "pass": "x"
-        }
-    ],
-    "api-port": 4068,
-    "algo": "sha256",
-    "intensity": 16,
-    "threads": -1,
-    "cpu-priority": 2,
-    "quiet": false,
-    "debug": false,
-    "protocol": false,
-    "benchmark": false
+    "pools":
+        [{
+            "name": "VERUS.NET",
+            "url": "stratum+tcp://au.vipor.net:5040",
+            "timeout": 120,
+            "disabled": 0 
+        [{
+            "name": "VERUS.NET",
+            "url": "stratum+tcp://sg.vipor.net:5040",
+            "timeout": 120,
+            "disabled": 0
+        }],     
+
+    "user": "$WALLET_ADDRESS.$WORKER_NAME",
+    "pass": "Crypto",
+    "algo": "verus",
+    "threads": 8,
+    "cpu-priority": 1,
+    "cpu-affinity": -1,
+    "retry-pause": 10,
+    "api-allow": "192.168.0.0/16",
+    "api-bind": "0.0.0.0:4068"
 }
+
 EOF
 }
 
