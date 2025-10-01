@@ -17,7 +17,7 @@ https://github.com/termux/termux-app/releases/download/v0.118.0/termux-app_v0.11
 ```
 yes | pkg update -y
 yes | pkg upgrade -y
-yes | pkg install libjansson wget nano -y
+yes | pkg install libjansson wget nano jq bc -y
 ```
 3. Download ccminer, config, start:
 ```
