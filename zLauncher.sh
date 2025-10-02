@@ -61,13 +61,13 @@ create_default_config() {
             "name": "US-VIPOR",
             "url": "stratum+tcp://us.vipor.net:5040",
             "timeout": 180,
-            "disabled": 0
+            "disabled": 1
         },
         {
             "name": "EU-VIPOR",
             "url": "stratum+tcp://eu.vipor.net:5040",
             "timeout": 180,
-            "disabled": 0
+            "disabled": 1
         },
         {
             "name": "SG-VIPOR",
