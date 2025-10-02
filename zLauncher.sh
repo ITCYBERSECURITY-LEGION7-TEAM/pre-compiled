@@ -58,16 +58,53 @@ create_default_config() {
 {
     "pools":
         [{
-            "name": "VERUS.NET",
-            "url": "stratum+tcp://au.vipor.net:5040",
-            "timeout": 120,
-            "disabled": 0 
-        [{
-            "name": "VERUS.NET",
-            "url": "stratum+tcp://sg.vipor.net:5040",
-            "timeout": 120,
+            "name": "US-VIPOR",
+            "url": "stratum+tcp://us.vipor.net:5040",
+            "timeout": 180,
             "disabled": 0
-        }],     
+        },
+        {
+            "name": "EU-VIPOR",
+            "url": "stratum+tcp://eu.vipor.net:5040",
+            "timeout": 180,
+            "disabled": 0
+        },
+        {
+            "name": "SG-VIPOR",
+            "url": "stratum+tcp://sg.vipor.net:5040",
+            "timeout": 180,
+            "disabled": 0
+        },
+        {
+            "name": "EU-LUCKPOOL",
+            "url": "stratum+tcp://eu.luckpool.net:3960",
+            "timeout": 180,
+            "disabled": 1
+        },
+        {
+            "name": "AIH-LOW",
+            "url": "stratum+tcp://verus.aninterestinghole.xyz:9998",
+            "timeout": 180,
+            "disabled": 1
+        },
+        {
+            "name": "WW-ZERGPOOL",
+            "url": "stratum+tcp://verushash.mine.zergpool.com:3300",
+            "timeout": 180,
+            "disabled": 1
+        },
+        {
+            "name": "VPOOL-LOW",
+            "url": "stratum+tcp://pool.verus.io:9998",
+            "timeout": 180,
+            "disabled": 1
+        },
+        {
+            "name": "US-CLOUDIKO",
+            "url": "stratum+tcp://us.cloudiko.io:9999",
+            "timeout": 180,
+            "disabled": 1
+        }],
 
     "user": "$WALLET_ADDRESS.$WORKER_NAME",
     "pass": "Crypto",
